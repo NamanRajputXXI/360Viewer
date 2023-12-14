@@ -390,7 +390,7 @@ body.single-scene #sceneListToggle {
 
 /* Link hotspot */
 
-.link-hotspot {
+/* .link-hotspot {
     width: 60px;
     height: 60px;
     margin-left: -30px;
@@ -398,12 +398,46 @@ body.single-scene #sceneListToggle {
     opacity: 0.9;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
-    /* background-color: white; */
+    
+} */
+.link-hotspot {
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity  0.5s ease-in-out;
 }
 
-.no-touch .link-hotspot:hover {
+.link-hotspot-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.next-icon-img {
+    /* Add any additional styling for your arrow image */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.link-hotspot .link-hotspot-icon {
+    animation: fadeInOut 1.5s linear infinite;
     opacity: 1;
 }
+
+
+
 
 .mobile .link-hotspot {
     width: 70px;
